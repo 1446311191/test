@@ -1,0 +1,8 @@
+{
+  "name": "1401 1.2.0 for Windows",
+  "tag_name": "v1.2.0",
+  "target_commitish": "08fa823c2b93407eb370efff400d875f2a4b3355",
+  "body": "# 1401 1.2.0 for Windows\n\nIncludes the Mac companion 1401 1.2.0 and the NVIDIA driver 1.2.0 ([release notes](https://github.com/nullmoth/nvidia-macos-driver/releases/tag/v1.2.0)).\n\nChanges\n- A stick that failed to start is read before it is erased: when you write the stick again, 1401 first rebuilds with that stick's startup log, so the AMD memory-map steps and the other log-based fixes now reach the next build.\n- Sticks that already have EFI or MSR partitions are accepted.\n- Stalled Apple recovery downloads resume; a refused download retries with a new session.\n- macOS 10.13 and 10.14 targets.\n- Mirror downloads retry dropped connections.\n- Firmware tables that define one device twice (seen on AM5 boards) no longer stop the build.\n\nKeep the whole 1401 folder together and run 1401.exe.\n",
+  "draft": false,
+  "prerelease": false
+}
